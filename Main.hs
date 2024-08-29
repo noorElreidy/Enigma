@@ -23,14 +23,6 @@ x2c = "QKPKFNLRTLQHVIGRIKUOEWSXRTIHWIODZORBRQJFZLMAJXKVXBPHROGJSPVIFNQERCDDANKEG
 printMaybe :: (Show a) => Maybe a -> IO ()
 printMaybe = maybe (putStrLn "No result!") print
 
-{- This is the type of thing that will happen when testing your code. Note
- - that (1) You must have your code in a module called "Enigma". (2) The functions
- - encodeMessage, longestMenu and breakEnigma are expecting arguments in a
- - particular format. Make sure you write your types so that they are compatible.
- -
- - NOTE: The actual contents of the main function when testing your code will be
- - different to this. You SHOULD NOT submit this file, only Enigma.hs.
- -}
 main = do
     putStrLn "First a test of encodeMessage: "
     print (encodeMessage "Here is a test input string." enigma1)
