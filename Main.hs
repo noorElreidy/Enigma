@@ -34,8 +34,7 @@ main = do
     print (longestMenu (zip p1 x1))
     putStrLn "And now SIX tests of breakEnigma:"
     putStrLn "NOTE: All but one of these most likely will return \"No result!\" after a very long search."
-    putStrLn "You should get a result for at least one of them though."
-   
+
     printMaybe (breakEnigma (zip p2 x2a))
     printMaybe (breakEnigma (zip p2 x2b))
     printMaybe (breakEnigma (zip p2 x2c))
