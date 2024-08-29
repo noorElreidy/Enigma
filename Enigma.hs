@@ -1,11 +1,3 @@
-{-- This is Noor Elreidy's submission for the Enigma assignment for COM2108.
- -- The solution is based on my interpretation of the assignment brief, information disclosed 
- -- on the BB discussion board, and a couple of online resources and videos that explain how enigma works. 
- -- Some of the code used has been provided by the labs. 
- -- Code has been manually tested using test data from the assignemnt brief, main.hs and Blackboard. 
- -- It was tested using both the first Main.hs and the second Main.hs files. 
- -- This has been submitted along with the report on 16/12/2022 after I receieved an extension.
- --}
 
 module Enigma where
   import Data.Char  -- to use functions on characters
@@ -13,8 +5,6 @@ module Enigma where
   import Data.List
   import Debug.Trace
 
-
-  -- add extra imports if needed, but only standard library functions!
 
 {- Part 1: Simulation of the Enigma -}
 
@@ -182,7 +172,6 @@ module Enigma where
 
   {- mergesort : given a list of lists, returns a list of lists sorted by length, descendingly .
      uses helper functions merge and cmpr to sort. 
-     Code provided by Emma Norling in week 3 lab . 
      mergesort cmpr [[1,2],[4,5,6],[0]] = [[4,5,6],[1,2],[0]] -}
   mergesort :: (Ord a, Show a) => (a->a->Bool) -> [a] -> [a]  
   mergesort cmp [] = [] 
